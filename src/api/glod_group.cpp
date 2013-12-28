@@ -207,7 +207,7 @@ void GLOD_Group::addObject(GLOD_Object *obj)
     {
 	if (maxObjects == 0)
 	{
-	    objects = new (GLOD_Object*)();
+	    objects = new GLOD_Object* [1];
 	    maxObjects = 1;
 	}
 	else
